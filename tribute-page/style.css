@@ -1,0 +1,110 @@
+body {
+  display: block;
+  font-family: "Lato", "Arial", sans-serif;
+  font-size: 1em;
+  text-align: center;
+  margin: 20px 0 0 0;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.header {
+  margin: 0;
+  background-color: #f1f1f1;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+#title {
+  font-family: "Alex Brush", "Lato", "Arial", cursive;
+  text-align: center;
+  font-size: 5.5em;
+  line-height: 0;
+}
+
+#belowtitle {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.1em;
+}
+
+#img-div {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 1000px;
+  font-size: 0.9em;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 30px;
+}
+
+#img-caption {
+  margin-bottom: 15px;
+}
+
+#image {
+  display: block;
+  height: auto;
+  width: 100%;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  opacity: 85%;
+}
+
+ul {
+  display: block;
+  max-width: 500px;
+  margin: 0 auto 20px auto;
+  text-align: left;
+}
+
+ul li {
+  padding: 5px 0;
+}
+
+#tribute-info {
+  margin: 0 0 20px 0;
+  text-align: center;
+  background-color: #f1f1f1;
+  display: block;
+  line-height: 1.5;
+  font-size: 1em;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+#facts {
+  display: block;
+  margin: 0 0 20px 0;
+  text-align: center;
+  background-color: #f1f1f1;
+  line-height: 1.5;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+a:link {
+  color: black;
+}
+
+a:hover {
+  text-decoration: none;
+  color: darkgrey;
+}
+
+#footer {
+  margin-bottom: 10px;
+}
+
+@media (max-width: 500px) {
+  #title {
+    font-size: 3em;
+  }
+  #belowtitle {
+    font-size: 0.8em;
+  }
+}
