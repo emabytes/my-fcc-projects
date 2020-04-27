@@ -39,7 +39,6 @@ body {
 
 .nav-link:hover {
   background: hsla(0, 0%, 95%, 0.9);
-  border-radius: 5px;
 }
 
 .nav-link:active {
@@ -347,9 +346,11 @@ footer ul {
 a {
   color: black;
 }
+
 a:unvisited {
   color: black;
 }
+
 a:visited {
   color: grey;
 }
@@ -358,7 +359,7 @@ a:visited {
 @media screen and (max-width: 768px) {
   .nav-link {
     font-size: 0.8em;
-    padding: 1.5rem;
+    padding: 1rem 2rem;
   }
 
   .main-container {
@@ -590,12 +591,10 @@ a:visited {
     background: hsla(0, 0%, 90%, 0.5);
     width: auto;
     font-weight: 700;
-    border-radius: 10px;
   }
 
   .nav-link:hover {
-    background: hsla(0, 0%, 75%, 0.9);
-    border-radius: 10px;
+    background: hsla(0, 0%, 95%, 0.9);
   }
 
   .nav-link:active {
