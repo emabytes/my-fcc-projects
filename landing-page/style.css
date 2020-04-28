@@ -563,11 +563,11 @@ a:visited {
   #nav-bar {
     height: auto;
     position: fixed;
+    background: white;
     left: 0;
     width: 250px;
     margin-top: 50px;
     transform: translateX(-250px);
-    background: black;
   }
 
   #links {
@@ -581,7 +581,6 @@ a:visited {
     position: fixed;
     margin: 0;
     padding: 0;
-    background: white;
   }
 
   .nav-link {
@@ -594,7 +593,7 @@ a:visited {
   }
 
   .nav-link:hover {
-    background: hsla(0, 0%, 95%, 0.9);
+    background: hsla(0, 0%, 95%, 0.5);
   }
 
   .nav-link:active {
@@ -605,23 +604,19 @@ a:visited {
     -webkit-tap-highlight-color: transparent;
   }
 
-  #header2 {
+  #menu-wrap {
     position: fixed;
     display: block;
-    margin: 0 auto;
     max-width: 100%;
     width: 100%;
-    box-shadow: none;
-    background-color: white;
-    height: 50px !important;
+    height: 50px;
     overflow: hidden;
-    z-index: 10;
+    z-index: 1;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: white;
   }
 
   input[type="checkbox"] {
-    transition: all 0.3s;
-    box-sizing: border-box;
     display: none;
   }
 
@@ -629,14 +624,12 @@ a:visited {
     transform: translateX(0px);
   }
 
-  .sidebarIconToggle {
-    transition: all 0.3s;
+  .hamburger-menu {
+    display: block;
     box-sizing: border-box;
     cursor: pointer;
     position: absolute;
-    z-index: 99;
-    height: 100%;
-    width: 100%;
+    z-index: 2;
     top: 17px;
     left: 25px;
     height: 25px;
@@ -644,53 +637,44 @@ a:visited {
     -webkit-tap-highlight-color: transparent;
   }
 
-  .spinner {
+  .line {
     transition: all 0.3s;
     box-sizing: border-box;
     position: absolute;
     height: 3px;
     width: 100%;
-    background-color: black;
+    background: black;
   }
 
-  .horizontal {
-    transition: all 0.3s;
+  .line:nth-child(2) {
     box-sizing: border-box;
     position: relative;
-    float: left;
     margin-top: 3px;
   }
 
-  .diagonal.part-1 {
-    position: relative;
-    transition: all 0.3s;
+  .line:nth-child(1) {
     box-sizing: border-box;
-    float: left;
+    position: relative;
   }
 
-  .diagonal.part-2 {
-    transition: all 0.3s;
+  .line:nth-child(3) {
     box-sizing: border-box;
     position: relative;
-    float: left;
     margin-top: 3px;
   }
 
-  input[type="checkbox"]:checked ~ .sidebarIconToggle > .horizontal {
-    transition: all 0.3s;
+  input[type="checkbox"]:checked ~ .hamburger-menu > .line:nth-child(2) {
     box-sizing: border-box;
     opacity: 0;
   }
 
-  input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-1 {
-    transition: all 0.3s;
+  input[type="checkbox"]:checked ~ .hamburger-menu > .line:nth-child(1) {
     box-sizing: border-box;
     transform: rotate(135deg);
     margin-top: 8px;
   }
 
-  input[type="checkbox"]:checked ~ .sidebarIconToggle > .diagonal.part-2 {
-    transition: all 0.3s;
+  input[type="checkbox"]:checked ~ .hamburger-menu > .line:nth-child(3) {
     box-sizing: border-box;
     transform: rotate(-135deg);
     margin-top: -9px;
