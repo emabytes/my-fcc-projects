@@ -25,6 +25,7 @@ body {
   font-size: 1.1rem;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
   padding: 1rem;
+  list-style-type: none;
 }
 
 .nav-link {
@@ -34,6 +35,7 @@ body {
   text-decoration: none;
   color: black;
   padding: 1rem 2rem;
+  
 }
 
 .nav-link:hover {
@@ -152,7 +154,7 @@ i img {
   padding: 1rem;
 }
 
-ul:last-of-type {
+.bullet-points:last-of-type {
   flex-grow: 1;
 }
 
@@ -167,7 +169,7 @@ ul:last-of-type {
   padding: 0;
 }
 
-ul li {
+.bullet-points li {
   padding: 0.5rem;
 }
 
@@ -358,7 +360,7 @@ a:visited {
 @media screen and (max-width: 768px) {
   .nav-link {
     font-size: 0.8em;
-    padding: 1rem 2rem;
+    padding: 1rem 1.8rem;
   }
 
   .main-container {
