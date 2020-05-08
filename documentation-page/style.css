@@ -19,9 +19,9 @@ body {
 }
 
 .title-text {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   font-weight: 700;
-  margin-left: 0.1rem;
+  margin-left: 0.4rem;
 }
 
 .main-title {
@@ -101,11 +101,15 @@ a:visited {
   outline: none;
 }
 
+.search-bar {
+  padding-bottom: 10px;
+}
+
 #main-doc {
   display: flex;
   flex-direction: column;
   margin-top: 10px;
-  margin-left: 255px;
+  margin-left: 275px;
   max-width: 80%;
 }
 
@@ -211,7 +215,7 @@ a {
   }
 
   pre {
-    width: 310px;
+    width: 330px;
   }
 }
 
@@ -307,6 +311,7 @@ a {
     position: fixed;
     right: 0;
     bottom: 0;
+    padding-bottom: 0;
   }
 
   .search-text {
