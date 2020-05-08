@@ -1,7 +1,5 @@
-Survey Form - FreeCodeCamp project 
+# Survey Form
 
+The assignment 'Build a Survey Form' is a part of the freeCodeCamp curriculum (Responsive Web Design module). The goal was to build a responsive survey form using HTML, CSS, and by following 16 user stories.
 
-I made this survey form using HTML and CSS, and following 16 user stories.
-
-Link to the assignment "Responsive Web Design Projects - Build a Survey Form": 
-https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-survey-form
+https://emabytes.github.io/my-fcc-projects/survey-form-page/
