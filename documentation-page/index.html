@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;1,300&display=swap"
+    rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js"></script>
+
+    <script src="javascript.js"></script>
+  <title>Python Documentation</title>
+</head>
+
+<body>
+  <nav id="navbar">
+    <header class="main-title"><img class="logo" src="img/python-logo.png" alt="logo">
+      <div class="title-text">Documentation</div>
+    </header>
+    <ul>
+      <li><a class="nav-link" href="#Introduction">Introduction</a></li>
+      <li><a class="nav-link" href="#Syntax">Syntax</a></li>
+      <li><a class="nav-link" href="#Variables">Variables</a></li>
+      <li><a class="nav-link" href="#Data_Types">Data Types</a></li>
+      <li><a class="nav-link" href="#If...Else_Statement">If...Else Statement</a></li>
+      <li><a class="nav-link" href="#While_Loops">While Loops</a></li>
+      <li><a class="nav-link" href="#For_Loops">For Loops</a></li>
+      <li><a class="nav-link" href="#Functions">Functions</a></li>
+      <li><a class="nav-link" href="#Collection_Data_Types">Collection Data Types</a></li>
+      <li><a class="nav-link" href="#Classes_and_Objects">Classes and Objects</a></li>
+      <li><a class="nav-link" href="#Reference">Reference</a></li>
+    </ul>
+
+    <div class="nav-toggle">
+      <a><i class="fa fa-angle-double-down"></i></a>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" class="search-text" placeholder="Search">
+      <button type="submit" class="search-button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </nav>
+
+  <main id="main-doc">
+    <section class="main-section" id="Introduction">
+
+      <header>
+        <h1>Introduction</h1>
+      </header>
+
+      <p>Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
+      </p>
+      <p>
+      <ul class="list">
+        <li>Python can be used on a server to create web applications.</li>
+        <li>Python can be used alongside software to create workflows.</li>
+        <li>Python can connect to database systems. It can also read and modify files.</li>
+        <li>Python can be used to handle big data and perform complex mathematics.</li>
+        <li>Python can be used for rapid prototyping, or for production-ready software development.</li>
+      </ul>
+      </p>
+    </section>
+
+    <section class="main-section" id="Syntax">
+      <header>
+        <h1>Syntax</h1>
+      </header>
+      <p>Python syntax can be executed by writing directly in the Command Line:
+      <pre>>>> print("Hello, World!")
+Hello, World!</pre>
+      <p>Or by creating a python file on the server, using the .py file extension, and running it in the Command Line:
+      </p>
+      <pre>C:\Users\<em>Your Name</em>>python myfile.py</pre>
+      </p>
+      <h3>Python Indentation</h3>
+      <p>Indentation refers to the spaces at the beginning of a code line.
+        Where in other programming languages the indentation in code is for readability only, the indentation in Python
+        is very important.
+        Python uses indentation to indicate a block of code.
+      <h4>Example</h4>
+      <pre>if 5 > 2:
+  print("Five is greater than two!")</pre>
+      </p>
+      <h3>Python Variables</h3>
+      <p>In Python, variables are created when you assign a value to it:
+      <h4>Example</h4>
+      <pre>x = 5
+y = "Hello, World!"</pre>
+      </p>
+      <h3>Comments</h3>
+      <p>Python has commenting capability for the purpose of in-code documentation.
+        Comments start with a #, and Python will render the rest of the line as a comment:
+      <h4>Example</h4>
+      <pre>#This is a comment.
+print("Hello, World!")</pre>
+      </p>
+    </section>
+
+    <section class="main-section" id="Variables">
+      <header>
+        <h1>Variables</h1>
+      </header>
+      <p>Variables are containers for storing data values.
+        Unlike other programming languages, Python has no command for declaring a variable.
+        A variable is created the moment you first assign a value to it.
+      <h4>Example</h4>
+      <pre>
+x = 5
+y = "John"
+print(x)
+print(y)
+</pre>
+      </p>
+      <p>Variables do not need to be declared with any particular type and can even change type after they have been
+        set.
+      </p>
+      <p>A variable can have a short name (like x and y) or a more descriptive name (age, carname, total_volume).
+      <h4>Example</h4>
+      <ul class="list">
+        <li>A variable name must start with a letter or the underscore character
+        </li>
+        <li>A variable name cannot start with a number
+        </li>
+        <li>A variable name can only contain alpha-numeric characters and underscores (A-z, 0-9, and _ )
+        </li>
+        <li>Variable names are case-sensitive (age, Age and AGE are three different variables)
+        </li>
+      </ul>
+      </p>
+    </section>
+
+    <section class="main-section" id="Data_Types">
+      <header>
+        <h1>Data Types</h1>
+      </header>
+      <p>Python has the following data types built-in by default, in these categories:
+      <ul class="list">
+        <li>Text Type: <code>str</code></li>
+        <li>Numeric Types: <code>int</code>, <code>float</code>, <code>complex</code></li>
+        <li>Sequence Types: <code>list</code>, <code>tuple</code>, <code>range</code></li>
+        <li>Mapping Type: <code>dict</code></li>
+        <li>Set Types: <code>set</code>, <code>frozenset</code></li>
+        <li>Boolean Type: <code>bool</code></li>
+        <li>Binary Types: <code>bytes</code>, <code>bytearray</code>, <code>memoryview</code></li>
+      </ul>
+      </p>
+      <p>In Python, the data type is set when you assign a value to a variable.
+      <table>
+        <tr>
+          <th>Example</th>
+          <th>Data Type</th>
+        </tr>
+        <tr>
+          <td><code>x = "Hello World"</code></td>
+          <td><code>str</code></td>
+        </tr>
+
+        <tr>
+          <td><code>x = 20</code></td>
+          <td><code>int</code></td>
+        </tr>
+
+        <tr>
+          <td><code>x = 20.5</code></td>
+          <td><code>float</code></td>
+        </tr>
+        <tr>
+          <td><code>x = True</code></td>
+          <td><code>bool</code></td>
+        </tr>
+      </table>
+      </p>
+    </section>
+
+    <section class="main-section" id="If...Else_Statement">
+      <header>
+        <h1>If...Else Statement</h1>
+      </header>
+
+      <p>Python supports the usual logical conditions from mathematics. Python relies on indentation (whitespace at the
+        beginning of a line) to define scope in the code. Other programming languages often use curly-brackets for this
+        purpose.
+
+      </p>
+      <p>An "if statement" is written by using the <code>if</code> keyword. The <code>elif</code> keyword is pythons way
+        of saying "if the previous conditions were not true, then try this condition". The <code>else</code> keyword
+        catches anything which isn't caught by the preceding conditions.
+      <h4>Example</h4>
+      <pre>
+a = 200
+b = 33
+if b > a:
+  print("b is greater than a")
+elif a == b:
+  print("a and b are equal")
+else:
+  print("a is greater than b")</pre>
+      </p>
+      <p>If you have only one statement to execute, one for <code>if</code>, and one for <code>else</code>, you can put
+        it all on the same line. This technique is known as Ternary Operators, or Conditional Expressions.
+      <h4>Example</h4>
+      <pre>
+a = 2
+b = 330
+print("A") if a > b else print("B")</pre>
+      </p>
+
+    </section>
+    <section class="main-section" id="While_Loops">
+      <header>
+        <h1>While Loops</h1>
+      </header>
+      <p>With the <code>while</code> loop we can execute a set of statements as long as a condition is true. It's
+        important to increment i, or else the loop will continue forever.
+        The <code>while</code> loop requires relevant variables to be ready, in this example we need to define an
+        indexing variable, <code>i</code>, which we set to 1.
+      <h4>Example</h4>
+      <p>Print i as long as i is less than 6:</p>
+      <pre>
+i = 1
+while i &lt; 6:
+  print(i)
+  i += 1</pre>
+      </p>
+    </section>
+    <section class="main-section" id="For_Loops">
+      <header>
+        <h1>For Loops</h1>
+      </header>
+      <p>A for loop is used for iterating over a sequence (that is either a list, a tuple, a dictionary, a set, or a
+        string).
+        This is less like the for keyword in other programming languages, and works more like an iterator method as
+        found in other object-orientated programming languages.
+        With the for loop we can execute a set of statements, once for each item in a list, tuple, set etc.
+      <h4>Example</h4>
+      <p>Print each fruit in a fruit list:</p>
+      <pre>fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+  print(x)</pre>
+      </p>
+
+    </section>
+    <section class="main-section" id="Functions">
+      <header>
+        <h1>Functions</h1>
+      </header>
+      <p>A function is a block of code which only runs when it is called.
+        You can pass data, known as parameters, into a function.
+        A function can return data as a result.</p>
+      <p>In Python a function is defined using the <code>def</code> keyword.To call a function, use the function name
+        followed by parenthesis.
+      <h4>Example</h4>
+      <pre>
+def my_function():
+  print("Hello from a function")
+  
+my_function()
+</pre>
+      </p>
+      <p>Information can be passed into functions as arguments.
+        Arguments are specified after the function name, inside the parentheses. You can add as many arguments as you
+        want, just separate them with a comma.
+
+        The following example has a function with one argument (fname). When the function is called, we pass along a
+        first name, which is used inside the function to print the full name:
+      <h4>Example</h4>
+      <pre>
+def my_function(fname):
+  print(fname + " Refsnes")
+
+my_function("Emil")
+my_function("Tobias")
+my_function("Linus")
+</pre>
+      </p>
+    </section>
+
+    <section class="main-section" id="Collection_Data_Types">
+      <header>
+        <h1>Collection Data Types</h1>
+      </header>
+      <p>
+        There are four collection data types in the Python programming language:
+
+      <ul id="data-list">
+        <li><strong>List</strong> is a collection which is ordered and changeable. Allows duplicate members.
+          <pre>
+thislist = ["apple", "banana", "cherry"]
+print(thislist)</pre>
+        </li>
+        <li><strong>Tuple</strong> is a collection which is ordered and unchangeable. Allows duplicate members.
+          <pre>
+thistuple = ("apple", "banana", "cherry")
+print(thistuple)</pre>
+        </li>
+        <li><strong>Set</strong> is a collection which is unordered and unindexed. No duplicate members.
+          <pre>thisset = {"apple", "banana", "cherry"}
+print(thisset)</pre>
+        </li>
+        <li><strong>Dictionary</strong> is a collection which is unordered, changeable and indexed. No duplicate
+          members.
+          <pre>
+thisdict = {
+  "brand": "Ford",
+  "model": "Mustang",
+  "year": 1964
+}
+print(thisdict)</pre>
+        </li>
+      </ul>
+      </p>
+    </section>
+
+    <section class="main-section" id="Classes_and_Objects">
+      <header>
+        <h1>Classes and Objects</h1>
+      </header>
+      <p>Some additional information here
+        Python is an object oriented programming language. Almost everything in Python is an object, with its properties
+        and methods. A Class is like an object constructor, or a "blueprint" for creating objects.</p>
+      <p>Create a class named MyClass, with a property named x:
+      <pre>
+class MyClass:
+  x = 5</pre>
+      </p>
+      <p>
+        Create an object named p1, and print the value of x:
+      <pre>
+p1 = MyClass()
+print(p1.x)</pre>
+      </p>
+    </section>
+
+    <section class="main-section" id="Reference">
+      <header>
+        <h1>Reference</h1>
+      </header>
+      <p>All the documentation in this page is taken from <a href="https://www.w3schools.com"
+          alt="w3schools website">w3schools</a>.</p>
+      <p>You can read more about Python on the <a href="https://www.python.org/">Python.org</a>.</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="main-title"><img class="logo" src="https://www.python.org/static/img/python-logo.png">
+      <div class="title-text">Documentation</div>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" class="search-text" placeholder="Search">
+      <button type="submit" class="search-button">
+        <i class="fa fa-search"></i>
+      </button>
+    </div>
+  </footer>
+
+</body>
+
+</html>
