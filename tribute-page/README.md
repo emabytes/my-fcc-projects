@@ -1,7 +1,6 @@
-Tribute page Nikola Tesla - Free Code Camp project
+# Tribute page Nikola Tesla 
 
+This is my first responsive web design project! :)
+The assignment 'Build a Tribute Page' is a part of the freeCodeCamp curriculum (Responsive Web Design module). The goal was to build a responsive documentation page using HTML, CSS, and following 9 user stories.
 
-I made this tribute page using HTML and CSS, and following 9 user stories.
-
-Link to the assignment "Responsive Web Design Projects - Build a Tribute Page": 
-https://www.freecodecamp.org/learn/responsive-web-design/responsive-web-design-projects/build-a-tribute-page
+https://emabytes.github.io/my-fcc-projects/tribute-page/
