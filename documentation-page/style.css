@@ -169,11 +169,10 @@ td {
 
 .main-section h1 {
   padding-top: 2.5rem;
-  padding-bottom: 0.5rem;
 }
 
 .main-section h1:nth-child(1) {
-  padding-top: 1.1rem;
+  padding-top: 3rem;
 }
 
 .main-section h3 {
