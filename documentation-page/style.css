@@ -26,7 +26,6 @@ body {
 
 .main-title {
   border-bottom: 3px solid hsl(0, 0%, 85%);
-  border-right: 3px solid hsl(0, 0%, 85%);
   overflow: hidden;
   width: 230px;
   padding-left: 1.2rem;
@@ -54,13 +53,12 @@ body {
   text-decoration: none;
   color: black;
   padding: 1rem;
-  padding-left: 1rem;
   border-bottom: 1px solid hsl(0, 0%, 85%);
 }
 
 #navbar ul {
   list-style-type: none;
-  width: 230px;
+  width: 227px;
   overflow-y: auto;
   overflow-x: hidden;
   padding-top: 100px;
@@ -73,7 +71,6 @@ a:visited {
 .nav-link:hover {
   background: hsl(0, 0%, 95%);
   cursor: pointer;
-  width: 227px;
 }
 
 .search-text {
