@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Yeseva+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Personal Portfolio Page</title>
+</head>
+
+
+<body>
+    <header>
+
+        <nav id="navbar">
+            <ul>
+                <li id="logo">
+                    <a href="#"><img src="https://i.ibb.co/FwfKY4b/logo1.png" alt="logo"></a></li>
+                <li class="nav-link"><a href="#">Home</a></li>
+                <li class="nav-link"><a href="#">About</a></li>
+                <li class="nav-link"><a href="#">Projects</a></li>
+                <li class="nav-link"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="welcome-section">
+            <h1>Hi! I'm Ema</h1>
+            <h3>on the road to becoming a web developer</h3>
+            <div id="background-img"><img
+                    src="https://images.pexels.com/photos/1563355/pexels-photo-1563355.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=750&w=1260">
+            </div>
+        </section>
+
+        <div class="grid-wrap">
+            <section id="projects" class="grid-container">
+
+                <div id="container-title">
+                    <h2>My Projects</h2>
+                </div>
+
+                <div class="project-tile" id="item1">
+                    <div class="content">
+                        <h3>Landing Page</h3>
+                        <a href="#">Live</a>
+                        <a href="#">Code</a>
+                    </div>
+                    <img class="project-img" src="https://i.ibb.co/JRTvFYP/landing-page-img-s.jpg" alt="project image">
+                </div>
+
+                <div class="project-tile" id="item2">
+                    <div class="content">
+                        <h3>Documentation Page</h3>
+                        <a href="#">Live</a>
+                        <a href="#">Code</a>
+                    </div>
+                    <img class="project-img" src="https://i.ibb.co/P1LtHWT/documentation-img-s.jpg" alt="project image">
+                </div>
+
+                <div class="project-tile" id="item3">
+                    <div class="content">
+                        <h3>Survey Form</h3>
+                        <a href="#">Live</a>
+                        <a href="#">Code</a>
+                    </div>
+                    <img class="project-img" src="https://i.ibb.co/0sxmNgN/survey-img-s.jpg" alt="project image">
+                </div>
+
+                <div class="project-tile" id="item4">
+                    <div class="content">
+                        <h3>Tribute Page</h3>
+                        <a href="#">Live</a>
+                        <a href="#">Code</a>
+                    </div>
+                    <img class="project-img" src="https://i.ibb.co/NmrKPPV/tribute-img-s.jpg" alt="project image">
+                </div>
+        </div>
+        </section>
+
+        <section id="contact-form">
+
+            <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+                <div id="contact-form-title">
+                    <h2>Contact Me</h2>
+                </div>
+                <div id="contact-call-action"></div>
+                <div class="form-group" id="contact"><input type="email" id="email" name="email"
+                        class="form-control-input" placeholder="Enter your email" required></div>
+                <div class="form-group"><input type="text" class="form-control-input" placeholder="Enter your name"
+                        id="name" required></div>
+                <div class="form-group"><textarea placeholder="Enter your message here" id="form-textarea"></textarea>
+                </div>
+                <div class="form-group"><input class="form-btn" type="submit" value="Send message" id="submit"></div>
+            </form>
+        </section>
+
+        <section id="contact-links">
+            <div>
+                <ul>
+                    <li id="github"><a id="profile-link" href="https://github.com/emabytes"><img class="social-icons"
+                                src="https://img.icons8.com/ios-filled/50/000000/github.png" /></a></li>
+                    <li id="codepen"><a href="#"><img class="social-icons"
+                                src="https://img.icons8.com/ios-filled/50/000000/code.png" /></a></li>
+                    <li id="twitter"><a href="#"><img class="social-icons"
+                                src="https://img.icons8.com/ios-filled/50/000000/twitter-circled.png" /></a></li>
+                    <li id="blog"><a href="#"><img class="social-icons"
+                                src="https://img.icons8.com/ios-filled/50/000000/blog.png" /></a></li>
+                </ul>
+            </div>
+
+    </main>
+    <footer>
+        <div id="icons-footer">Icons by <a href="https://icons8.com/icon/" target="_blank">Icons8</a></div>
+        <div id="mady-by">Made by <a href="https://twitter.com/emabytes" target="_blank">emabytes</a></div>
+    </footer>
+</body>
+
+</html>
